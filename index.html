@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasba Computer - Rasel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #1877f2;
+            object-fit: cover;
+        }
+        h1 {
+            color: #1877f2;
+            margin-top: 15px;
+        }
+        h2 {
+            color: #333;
+            font-weight: 500;
+        }
+        .skills {
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .skills p {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 12px 25px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .whatsapp { background: #25D366; }
+        .whatsapp:hover { background: #1da851; }
+        .imo { background: #0080FF; }
+        .imo:hover { background: #0066cc; }
+        footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="37.jpg" alt="Rasel Profile">
+        <h1>kasba computer</h1>
+        <h2>Hi, I'm Rasel 👋</h2>
+        <p>Computer Operator & Freelancer</p>
+        
+        <div class="skills">
+            <p>✅ MS Word, Excel</p>
+            <p>✅ Photoshop Design</p>
+            <p>✅ Data Entry</p>
+            <p>✅ Web Research</p>
+        </div>
+
+        <br>
+        <!-- WhatsApp বাটন - এখানে তোমার নাম্বার বসাও -->
+        <a href="https://wa.me/8801624826201" target="_blank" class="btn whatsapp">WhatsApp এ মেসেজ</a>
+        
+        <!-- Imo বাটন - এখানে তোমার নাম্বার বসাও -->
+        <a href="https://imo.im/8801952513864" target="_blank" class="btn imo">Imo তে কল</a>
+
+        <footer>
+            <p>© 2026 Rasel | All Rights Reserved</p>
+            <p id="time"></p>
+        </footer>
+    </div>
+
+    <script>
+        function updateTime() {
+            document.getElementById('time').innerHTML = "Live Time: " + new Date().toLocaleTimeString();
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
