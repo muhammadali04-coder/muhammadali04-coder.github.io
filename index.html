@@ -52,11 +52,12 @@
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
+            font-size: 16px;
         }
-        .whatsapp { background: #25D366; }
-        .whatsapp:hover { background: #1da851; }
-        .imo { background: #0080FF; }
-        .imo:hover { background: #0066cc; }
+        .whatsapp-msg { background: #25D366; }
+        .whatsapp-msg:hover { background: #1da851; }
+        .whatsapp-call { background: #128C7E; }
+        .whatsapp-call:hover { background: #0d6d5a; }
         footer {
             margin-top: 30px;
             color: #666;
@@ -79,15 +80,12 @@
         </div>
 
         <br>
-        <!-- WhatsApp বাটন - এখানে তোমার নাম্বার বসাও -->
-      <a href="https://wa.me/8801624826201?text=সালাম রাসেল ভাই, kasba computer এর ওয়েবসাইট থেকে মেসেজ দিলাম।" target="_blank">
-  <button style="background:green; color:white; padding:10px 20px; border:none; border-radius:5px;">
-    WhatsApp এ মেসেজ
-  </button>
-</a>
+        <!-- WhatsApp মেসেজ বাটন - মেসেজ অটো আসবে -->
+        <a href="https://api.whatsapp.com/send?phone=8801624826201&text=সালাম রাসেল ভাই, kasba computer এর ওয়েবসাইট থেকে মেসেজ দিলাম। আমার কাজের জন্য কথা বলতে চাই।" target="_blank" class="btn whatsapp-msg">WhatsApp এ মেসেজ</a>
         
-        
-       
+        <!-- WhatsApp কল বাটন -->
+        <a href="https://wa.me/8801624826201" target="_blank" class="btn whatsapp-call">WhatsApp এ কল দিন</a>
+
         <footer>
             <p>© 2026 Rasel | All Rights Reserved</p>
             <p id="time"></p>
